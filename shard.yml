@@ -13,14 +13,14 @@ dependencies:
     branch: master
   jaro_winkler:
     github: kostya/jaro_winkler
-  humanize_time:
-    github: mamantoha/humanize_time
-    branch: detransport
   i18n:
     # github: TechMagister/i18n.cr
     # branch: master
     github: mamantoha/i18n.cr
-    branch: detransport
+    branch: custom-plural_rule
+  humanize_time:
+    github: mamantoha/humanize_time
+    branch: ukrainian-locale
   jennifer:
     github: imdrasil/jennifer.cr
   pg:

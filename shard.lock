@@ -18,11 +18,11 @@ shards:
 
   humanize_time:
     github: mamantoha/humanize_time
-    commit: f0fc12def45c572a2514bfa3f1040f5c041752d3
+    commit: 82204277e5f541222c6d84acb0a4e00f9dbd70eb
 
   i18n:
     github: mamantoha/i18n.cr
-    commit: 5eb50c93aa09c3c99b437aa57d809f6a624d145e
+    commit: 55a7f979ce9147518457dc4ac2872557213114f0
 
   ifrit:
     github: imdrasil/ifrit
