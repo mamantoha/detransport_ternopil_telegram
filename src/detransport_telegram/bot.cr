@@ -24,7 +24,7 @@ module DetransportTelegram
       time = Time.utc
       logger.info "> #{obj.class.name} #{obj.to_json}"
 
-      # load_user(obj)
+      load_user(obj)
 
       klass.new(obj, self).handle
 
@@ -35,20 +35,20 @@ module DetransportTelegram
       return false
     end
 
-    # private def load_user(msg)
-    #   if telegram_user = msg.from
-    #     if user = User.where { _telegram_id == telegram_user.id }.first
-    #       user
-    #     else
-    #       User.create(
-    #         telegram_id: telegram_user.id,
-    #         first_name: telegram_user.first_name,
-    #         last_name: telegram_user.last_name,
-    #         username: telegram_user.username,
-    #         language_code: telegram_user.language_code
-    #       )
-    #     end
-    #   end
-    # end
+    private def load_user(msg)
+      if telegram_user = msg.from
+        if user = User.where { _telegram_id == telegram_user.id }.first
+          user
+        else
+          User.create(
+            telegram_id: telegram_user.id,
+            first_name: telegram_user.first_name,
+            last_name: telegram_user.last_name,
+            username: telegram_user.username,
+            language_code: telegram_user.language_code
+          )
+        end
+      end
+    end
   end
 end
