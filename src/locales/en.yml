@@ -1,0 +1,13 @@
+messages:
+  select_stop: Select a stop
+  nearest_stops: Nearest stops
+  help: "*Telegram Bot for Ternopil citizens and city guests.*
+
+
+    Helps them easily navigate public transport system.
+    The bot features real time schedule of public transport.
+
+    - Send any message to list bus stations etc.
+
+    - Send current location to locate the closest bus stop."
+  share_location: 📍 Share location

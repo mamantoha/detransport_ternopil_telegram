@@ -1,0 +1,54 @@
+version: 1.0
+shards:
+  crest:
+    github: mamantoha/crest
+    version: 0.19.1
+
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.5.1
+
+  dotenv:
+    github: gdotdesign/cr-dotenv
+    version: 0.2.0
+
+  haversine:
+    github: mamantoha/haversine
+    version: 0.1.0
+
+  humanize_time:
+    github: mamantoha/humanize_time
+    commit: f0fc12def45c572a2514bfa3f1040f5c041752d3
+
+  i18n:
+    github: mamantoha/i18n.cr
+    commit: 5eb50c93aa09c3c99b437aa57d809f6a624d145e
+
+  ifrit:
+    github: imdrasil/ifrit
+    version: 0.1.2
+
+  inflector:
+    github: phoffer/inflector.cr
+    version: 0.1.8
+
+  jaro_winkler:
+    github: kostya/jaro_winkler
+    version: 0.1
+
+  jennifer:
+    github: imdrasil/jennifer.cr
+    version: 0.7.1
+
+  pg:
+    github: will/crystal-pg
+    version: 0.16.1
+
+  sam:
+    github: imdrasil/sam.cr
+    version: 0.3.0
+
+  telegram_bot:
+    github: hangyas/telegram_bot
+    commit: c46f930d19f394c0e26b3ddc77e967916c12bb08
+

@@ -1,0 +1,8 @@
+/docs/
+/lib/
+/log/
+/bin/
+/.shards/
+*.dwarf
+.env
+/config/database.yml
