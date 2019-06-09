@@ -29,10 +29,10 @@ module DetransportTelegram
       klass.new(obj, self).handle
 
       logger.debug("Handled #{obj.class.name} in #{Time.utc - time}")
-      return true
+      true
     rescue e
       logger.error(e.inspect_with_backtrace)
-      return false
+      false
     end
 
     private def load_user(msg)

@@ -30,9 +30,9 @@ module DetransportTelegram
         arry << route.full_name
       end
 
-      stop_name = detransport_api.stops.stops.select { |s| s.id == stop_id }.first.name
+      stop_name = detransport_api.stops.stops.find { |s| s.id == stop_id }.try(&.name)
 
-      text = String::Builder.build do |io|
+      String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
         io << "\n"
         routes.each { |el| io << el << "\n" }
