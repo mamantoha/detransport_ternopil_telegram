@@ -11,3 +11,6 @@ messages:
 
     - Send current location to locate the closest bus stop."
   share_location: 📍 Share location
+  meters:
+    one: "%{count} meter"
+    other: "%{count} meters"
