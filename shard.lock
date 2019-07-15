@@ -6,7 +6,7 @@ shards:
 
   crest:
     github: mamantoha/crest
-    version: 0.19.1
+    version: 0.20.0
 
   db:
     github: crystal-lang/crystal-db
@@ -22,11 +22,11 @@ shards:
 
   humanize_time:
     github: mamantoha/humanize_time
-    commit: 82204277e5f541222c6d84acb0a4e00f9dbd70eb
+    commit: cbdf942b09451b1662047b0ba75e0858206c0fe2
 
   i18n:
     github: mamantoha/i18n.cr
-    commit: 55a7f979ce9147518457dc4ac2872557213114f0
+    commit: 99fb62a3dbcee795bef058e609f04520186ded12
 
   ifrit:
     github: imdrasil/ifrit
@@ -42,7 +42,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    version: 0.7.1
+    version: 0.8.0
 
   pg:
     github: will/crystal-pg
