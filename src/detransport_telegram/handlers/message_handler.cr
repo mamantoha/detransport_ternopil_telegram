@@ -25,9 +25,12 @@ module DetransportTelegram
     end
 
     private def handle_commands(message, text : String)
-      if text =~ /^\/(help|start)/
+      case text
+      when /^\/(help|start)/
         handle_help
-      elsif text =~ /^\/ping/
+      when /^\/about/
+        handle_about
+      when /^\/ping/
         bot.reply(message, "🏓")
       end
     end
@@ -58,6 +61,16 @@ module DetransportTelegram
       keyboard = TelegramBot::InlineKeyboardMarkup.new(buttons)
 
       bot.send_message(chat_id, text, reply_markup: keyboard)
+    end
+
+    private def handle_about
+      text = <<-HEREDOC
+      Build with:
+
+      Crystal #{Crystal::VERSION}
+      HEREDOC
+
+      bot.send_message(chat_id, text, parse_mode: "Markdown")
     end
 
     private def handle_help
