@@ -6,7 +6,7 @@ shards:
 
   crest:
     github: mamantoha/crest
-    version: 0.20.0
+    version: 0.21.0
 
   db:
     github: crystal-lang/crystal-db
@@ -26,7 +26,7 @@ shards:
 
   i18n:
     github: mamantoha/i18n.cr
-    commit: 99fb62a3dbcee795bef058e609f04520186ded12
+    commit: 8fc962fe786b774150aba54e238f2f400b73c40c
 
   ifrit:
     github: imdrasil/ifrit
@@ -46,7 +46,7 @@ shards:
 
   pg:
     github: will/crystal-pg
-    version: 0.16.1
+    version: 0.17.0
 
   sam:
     github: imdrasil/sam.cr
