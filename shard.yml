@@ -31,7 +31,7 @@ dependencies:
 
 development_dependencies:
   ameba:
-    github: veelenga/ameba
+    github: crystal-ameba/ameba
 
 authors:
   - Anton Maminov <anton.maminov@gmail.com>
