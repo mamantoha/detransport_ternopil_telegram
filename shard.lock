@@ -1,7 +1,7 @@
 version: 1.0
 shards:
   ameba:
-    github: veelenga/ameba
+    github: crystal-ameba/ameba
     version: 0.10.0
 
   crest:
@@ -10,7 +10,7 @@ shards:
 
   db:
     github: crystal-lang/crystal-db
-    version: 0.5.1
+    version: 0.6.0
 
   dotenv:
     github: gdotdesign/cr-dotenv
@@ -42,11 +42,11 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    version: 0.8.0
+    commit: e621fbb94d4d2fd71feb14ab51047f5f743753db
 
   pg:
     github: will/crystal-pg
-    version: 0.15.0
+    version: 0.18.1
 
   sam:
     github: imdrasil/sam.cr

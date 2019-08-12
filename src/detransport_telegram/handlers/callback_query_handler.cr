@@ -35,10 +35,10 @@ module DetransportTelegram
       String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
         io << "\n"
-        unless routes.empty?
-          routes.each { |el| io << el << "\n" }
-        else
+        if routes.empty?
           io << I18n.translate("messages.no_infomation") << "\n"
+        else
+          routes.each { |el| io << el << "\n" }
         end
       end.to_s
     end

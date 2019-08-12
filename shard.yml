@@ -23,9 +23,9 @@ dependencies:
     branch: ukrainian-locale
   jennifer:
     github: imdrasil/jennifer.cr
+    branch: master
   pg:
     github: will/crystal-pg
-    version: "0.15.0"
   sam:
     github: imdrasil/sam.cr
 
