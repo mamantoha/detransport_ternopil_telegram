@@ -2,11 +2,11 @@ version: 1.0
 shards:
   ameba:
     github: crystal-ameba/ameba
-    version: 0.10.0
+    version: 0.10.1
 
   crest:
     github: mamantoha/crest
-    version: 0.21.0
+    version: 0.22.0
 
   db:
     github: crystal-lang/crystal-db
@@ -14,11 +14,15 @@ shards:
 
   dotenv:
     github: gdotdesign/cr-dotenv
-    version: 0.2.0
+    version: 0.3.1
 
   haversine:
     github: mamantoha/haversine
     version: 0.1.0
+
+  http-client-digest_auth:
+    github: mamantoha/http-client-digest_auth
+    version: 0.2.0
 
   humanize_time:
     github: mamantoha/humanize_time
@@ -38,11 +42,11 @@ shards:
 
   jaro_winkler:
     github: kostya/jaro_winkler
-    version: 0.1
+    version: 0.2
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: e621fbb94d4d2fd71feb14ab51047f5f743753db
+    commit: 7ffd4c4ae0d264fdc17c5d659fc610aef4291598
 
   pg:
     github: will/crystal-pg
@@ -50,7 +54,7 @@ shards:
 
   sam:
     github: imdrasil/sam.cr
-    version: 0.3.0
+    version: 0.3.1
 
   telegram_bot:
     github: hangyas/telegram_bot
