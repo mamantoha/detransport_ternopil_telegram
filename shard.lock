@@ -30,7 +30,7 @@ shards:
 
   i18n:
     github: mamantoha/i18n.cr
-    commit: 8fc962fe786b774150aba54e238f2f400b73c40c
+    commit: 1db994ef9636c246afd4caf264aafd6fa358416b
 
   ifrit:
     github: imdrasil/ifrit
@@ -46,7 +46,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: 6bcfb511bc55a911bab3e6524776d92a8d9fa553
+    commit: 8f15f95d648a8843778123b52dad94019f873ab7
 
   pg:
     github: will/crystal-pg
@@ -54,7 +54,7 @@ shards:
 
   sam:
     github: imdrasil/sam.cr
-    version: 0.3.1
+    version: 0.3.2
 
   telegram_bot:
     github: hangyas/telegram_bot
