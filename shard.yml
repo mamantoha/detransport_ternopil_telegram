@@ -5,7 +5,7 @@ dependencies:
   dotenv:
     github: gdotdesign/cr-dotenv
   haversine:
-    github: mamantoha/haversine
+    github: geocrystal/haversine
   crest:
     github: mamantoha/crest
   telegram_bot:

@@ -17,8 +17,8 @@ shards:
     version: 0.3.1
 
   haversine:
-    github: mamantoha/haversine
-    version: 0.1.0
+    github: geocrystal/haversine
+    version: 0.2.1
 
   http-client-digest_auth:
     github: mamantoha/http-client-digest_auth
@@ -26,7 +26,7 @@ shards:
 
   humanize_time:
     github: mamantoha/humanize_time
-    commit: cbdf942b09451b1662047b0ba75e0858206c0fe2
+    commit: 773e168c039361b31d2f1f8280500d09ace61cb6
 
   i18n:
     github: mamantoha/i18n.cr
@@ -46,7 +46,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: 8f15f95d648a8843778123b52dad94019f873ab7
+    commit: aac79fe2f1fe8c566f62e17cf1fd964930ad0c99
 
   pg:
     github: will/crystal-pg
