@@ -23,6 +23,10 @@ module DetransportTelegram
 
       property stops : Array(Stop)
 
+      def get_by_id(stop_id : String)
+        stops.find { |stop| stop.id == stop_id }
+      end
+
       def nearest_to(latitude : Float64, longitude : Float64, count = 5)
         sorted_stops = stops.sort_by do |stop|
           Haversine.distance(stop.lat.to_f, stop.lng.to_f, latitude, longitude)

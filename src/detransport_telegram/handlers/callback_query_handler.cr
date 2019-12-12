@@ -34,6 +34,7 @@ module DetransportTelegram
 
       String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
+        io << "#{I18n.translate("messages.show_stop_on_map")}: /#{stop_id}" << "\n"
         io << "\n"
         if routes.empty?
           io << I18n.translate("messages.no_infomation") << "\n"

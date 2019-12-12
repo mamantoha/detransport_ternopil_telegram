@@ -32,6 +32,11 @@ module DetransportTelegram
         handle_about
       when /^\/ping/
         bot.reply(message, "🏓")
+      when /^\/(\d+)/
+        if m = text.match(/^\/(\d+)/)
+          stop_id = m[1].to_i
+          handle_stop_location(stop_id)
+        end
       end
     end
 
@@ -106,6 +111,20 @@ module DetransportTelegram
       detransport_api = DetransportTelegram::DetransportAPI.new
 
       detransport_api.stops
+    end
+
+    private def handle_stop_location(stop_id : Int32)
+      if stop = stops.get_by_id(stop_id.to_s)
+        coord = Geo::Coord.new(stop.lat.to_f, stop.lng.to_f)
+
+        bot.send_venue(
+          chat_id,
+          latitude: stop.lat.to_f,
+          longitude: stop.lng.to_f,
+          title: stop.full_name,
+          address: "\n🧭 #{coord.to_s}"
+        )
+      end
     end
   end
 end

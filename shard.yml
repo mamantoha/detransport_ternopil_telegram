@@ -4,6 +4,8 @@ version: 0.1.0
 dependencies:
   dotenv:
     github: gdotdesign/cr-dotenv
+  geo:
+    github: geocrystal/geo
   haversine:
     github: geocrystal/haversine
   crest:
