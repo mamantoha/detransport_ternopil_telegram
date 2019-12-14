@@ -69,6 +69,17 @@ module DetransportTelegram
       property vehicle_type : String
 
       property name : String
+
+      def icon
+        case vehicle_type
+        when "1"
+          "🚌"
+        when "2"
+          "🚎"
+        else
+          "🚌"
+        end
+      end
     end
 
     class Vehicles

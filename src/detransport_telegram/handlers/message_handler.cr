@@ -32,17 +32,17 @@ module DetransportTelegram
         handle_about
       when /^\/ping/
         bot.reply(message, "🏓")
-      when /^\/(\d+)/
-        if m = text.match(/^\/(\d+)/)
+      when r = /^\/map(\d+)/
+        if m = text.match(r)
           stop_id = m[1].to_i
           handle_stop_location(stop_id)
         end
+      when r = /^\/info(\d+)/
+        if m = text.match(r)
+          stop_id = m[1].to_i
+          handle_stop_info(stop_id)
+        end
       end
-    end
-
-    private def swap_keyboard_layout_from_latin_to_ua(text : String)
-      chars_hash = {'q' => 'й', 'w' => 'ц', 'e' => 'у', 'r' => 'к', 't' => 'е', 'y' => 'н', 'u' => 'г', 'i' => 'ш', 'o' => 'щ', 'p' => 'з', '[' => 'х', ']' => 'ї', '\\' => 'ґ', 'a' => 'ф', 's' => 'і', 'd' => 'в', 'f' => 'а', 'g' => 'п', 'h' => 'р', 'j' => 'о', 'k' => 'л', 'l' => 'д', ';' => 'ж', '\'' => 'є', 'z' => 'я', 'x' => 'ч', 'c' => 'с', 'v' => 'м', 'b' => 'и', 'n' => 'т', 'm' => 'ь', ',' => 'б', '.' => 'ю', '/' => '.', 'Q' => 'Й', 'W' => 'Ц', 'E' => 'У', 'R' => 'К', 'T' => 'Е', 'Y' => 'Н', 'U' => 'Г', 'I' => 'Ш', 'O' => 'Щ', 'P' => 'З', '{' => 'Х', '}' => 'Ї', '|' => 'Ґ', 'A' => 'Ф', 'S' => 'І', 'D' => 'В', 'F' => 'А', 'G' => 'П', 'H' => 'Р', 'J' => 'О', 'K' => 'Л', 'L' => 'Д', ':' => 'Ж', '"' => 'Є', 'Z' => 'Я', 'X' => 'Ч', 'C' => 'С', 'V' => 'М', 'B' => 'И', 'N' => 'Т', 'M' => 'Ь', '<' => 'Б', '>' => 'Ю', '?' => ','}
-      text.gsub(chars_hash)
     end
 
     private def handle_similar_stops(stop : String)
@@ -125,6 +125,31 @@ module DetransportTelegram
           address: "\n🧭 #{coord.to_s}"
         )
       end
+    end
+
+    private def handle_stop_info(stop_id : Int32)
+      io = String::Builder.new
+
+      if stop = stops.get_by_id(stop_id.to_s)
+        io << stop.full_name
+        io << "\n\n"
+        io << I18n.translate("messages.vehicles_list")
+        io << ":"
+        io << "\n\n"
+        stop.vehicles.each do |vehicle|
+          io << "#{vehicle.icon} #{vehicle.name}"
+          io << "\n"
+        end
+      else
+        io << I18n.translate("messages.no_infomation")
+      end
+
+      bot.send_message(chat_id, io.to_s)
+    end
+
+    private def swap_keyboard_layout_from_latin_to_ua(text : String)
+      chars_hash = {'q' => 'й', 'w' => 'ц', 'e' => 'у', 'r' => 'к', 't' => 'е', 'y' => 'н', 'u' => 'г', 'i' => 'ш', 'o' => 'щ', 'p' => 'з', '[' => 'х', ']' => 'ї', '\\' => 'ґ', 'a' => 'ф', 's' => 'і', 'd' => 'в', 'f' => 'а', 'g' => 'п', 'h' => 'р', 'j' => 'о', 'k' => 'л', 'l' => 'д', ';' => 'ж', '\'' => 'є', 'z' => 'я', 'x' => 'ч', 'c' => 'с', 'v' => 'м', 'b' => 'и', 'n' => 'т', 'm' => 'ь', ',' => 'б', '.' => 'ю', '/' => '.', 'Q' => 'Й', 'W' => 'Ц', 'E' => 'У', 'R' => 'К', 'T' => 'Е', 'Y' => 'Н', 'U' => 'Г', 'I' => 'Ш', 'O' => 'Щ', 'P' => 'З', '{' => 'Х', '}' => 'Ї', '|' => 'Ґ', 'A' => 'Ф', 'S' => 'І', 'D' => 'В', 'F' => 'А', 'G' => 'П', 'H' => 'Р', 'J' => 'О', 'K' => 'Л', 'L' => 'Д', ':' => 'Ж', '"' => 'Є', 'Z' => 'Я', 'X' => 'Ч', 'C' => 'С', 'V' => 'М', 'B' => 'И', 'N' => 'Т', 'M' => 'Ь', '<' => 'Б', '>' => 'Ю', '?' => ','}
+      text.gsub(chars_hash)
     end
   end
 end

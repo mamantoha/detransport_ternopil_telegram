@@ -13,6 +13,8 @@ messages:
   share_location: 📍 Share location
   no_infomation: 🚫 No information available
   show_stop_on_map: Show bus stop on the map
+  show_stop_info: Stop information
+  vehicles_list: Vehicles
   meters:
     one: "%{count} meter"
     other: "%{count} meters"
