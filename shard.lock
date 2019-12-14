@@ -10,7 +10,7 @@ shards:
 
   crest:
     github: mamantoha/crest
-    version: 0.23.0
+    version: 0.23.1
 
   db:
     github: crystal-lang/crystal-db
@@ -54,7 +54,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: aac79fe2f1fe8c566f62e17cf1fd964930ad0c99
+    commit: c27a825f9b225e2ae7602ae8275f5ee3fd64b6c7
 
   pg:
     github: will/crystal-pg
