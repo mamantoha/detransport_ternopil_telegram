@@ -2,6 +2,12 @@
 
 Source code for <https://t.me/DetransportTernopilBot>
 
+<p>
+  <img src="https://github.com/mamantoha/detransport_ternopil_telegram/blob/master/screenshots/1.png?raw=true" width="30%" />
+  <img src="https://github.com/mamantoha/detransport_ternopil_telegram/blob/master/screenshots/2.png?raw=true" width="30%" />
+  <img src="https://github.com/mamantoha/detransport_ternopil_telegram/blob/master/screenshots/3.png?raw=true" width="30%" />
+</p>
+
 ## Installation
 
 ### Requirements
