@@ -14,7 +14,7 @@ shards:
 
   db:
     github: crystal-lang/crystal-db
-    version: 0.7.0
+    version: 0.8.0
 
   dotenv:
     github: gdotdesign/cr-dotenv
@@ -34,7 +34,7 @@ shards:
 
   humanize_time:
     github: mamantoha/humanize_time
-    commit: 773e168c039361b31d2f1f8280500d09ace61cb6
+    commit: 22da7d052ee0f184cba3b111e6fafd045cbe8003
 
   i18n:
     github: mamantoha/i18n.cr
@@ -58,7 +58,7 @@ shards:
 
   pg:
     github: will/crystal-pg
-    version: 0.19.0
+    version: 0.20.0
 
   sam:
     github: imdrasil/sam.cr
