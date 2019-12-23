@@ -37,8 +37,12 @@ shards:
     commit: 22da7d052ee0f184cba3b111e6fafd045cbe8003
 
   i18n:
-    github: mamantoha/i18n.cr
-    commit: 1db994ef9636c246afd4caf264aafd6fa358416b
+    github: TechMagister/i18n.cr
+    version: 0.3.1
+
+  i18n_plural_rules:
+    github: mamantoha/i18n_plural_rules
+    version: 0.1.0
 
   ifrit:
     github: imdrasil/ifrit
@@ -54,7 +58,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: c27a825f9b225e2ae7602ae8275f5ee3fd64b6c7
+    commit: d1dbede8da52014a84f2accd7caeb4904d75812e
 
   pg:
     github: will/crystal-pg

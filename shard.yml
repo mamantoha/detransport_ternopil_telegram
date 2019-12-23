@@ -16,10 +16,9 @@ dependencies:
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
-    # github: TechMagister/i18n.cr
-    # branch: master
-    github: mamantoha/i18n.cr
-    branch: custom-plural_rule
+    github: TechMagister/i18n.cr
+  i18n_plural_rules:
+    github: mamantoha/i18n_plural_rules
   humanize_time:
     github: mamantoha/humanize_time
     branch: ukrainian-locale
