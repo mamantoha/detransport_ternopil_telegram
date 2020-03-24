@@ -12,14 +12,21 @@ module DetransportTelegram
 
     def handle
       if chat_id = @chat_id
-        bot.answer_callback_query(@callback_query.id, cache_time: 1)
-
-        stop_id = @callback_query.data
-
-        keyboard = TelegramBot::ReplyKeyboardRemove.new
-        bot.send_message(chat_id, routes_text(stop_id), parse_mode: "Markdown", reply_markup: keyboard)
+        text = bot.covid19_message
+        bot.send_message(chat_id, text)
       end
     end
+
+    # def handle
+    #   if chat_id = @chat_id
+    #     bot.answer_callback_query(@callback_query.id, cache_time: 1)
+
+    #     stop_id = @callback_query.data
+
+    #     keyboard = TelegramBot::ReplyKeyboardRemove.new
+    #     bot.send_message(chat_id, routes_text(stop_id), parse_mode: "Markdown", reply_markup: keyboard)
+    #   end
+    # end
 
     private def routes_text(stop_id)
       detransport_api = DetransportTelegram::DetransportAPI.new
