@@ -21,7 +21,6 @@ dependencies:
     github: mamantoha/i18n_plural_rules
   humanize_time:
     github: mamantoha/humanize_time
-    branch: ukrainian-locale
   jennifer:
     github: imdrasil/jennifer.cr
     branch: master

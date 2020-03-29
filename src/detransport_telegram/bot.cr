@@ -24,7 +24,10 @@ module DetransportTelegram
       time = Time.utc
       logger.info "> #{obj.class.name} #{obj.to_json}"
 
-      load_user(obj)
+      if user = load_user(obj)
+        user.updated_at = Time.local(Jennifer::Config.local_time_zone)
+        user.save
+      end
 
       klass.new(obj, self).handle
 
@@ -35,7 +38,7 @@ module DetransportTelegram
       false
     end
 
-    private def load_user(msg)
+    private def load_user(msg) : User?
       if telegram_user = msg.from
         if user = User.where { _telegram_id == telegram_user.id }.first
           user
