@@ -12,8 +12,7 @@ module DetransportTelegram
       if message_text = message.text
         handle_text(message, message_text)
       elsif message_location = message.location
-        bot.send_message(chat_id, bot.covid19_message)
-        # handle_location(message_location)
+        handle_location(message_location)
       end
     end
 
@@ -21,8 +20,7 @@ module DetransportTelegram
       if text.starts_with?("/")
         handle_commands(message, text)
       else
-        bot.send_message(chat_id, bot.covid19_message)
-        # handle_similar_stops(text)
+        handle_similar_stops(text)
       end
     end
 

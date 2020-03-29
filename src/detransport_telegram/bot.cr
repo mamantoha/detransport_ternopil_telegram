@@ -20,18 +20,6 @@ module DetransportTelegram
       handle_with(callback_query, DetransportTelegram::CallbackQueryHandler)
     end
 
-    def covid19_message
-      text = <<-TEXT
-      На період карантину в Тернополі призупининено роботу громадського транспорту.
-
-      Під час карантину залишайтеся вдома! Подбайте про самоізоляцію. Проводьте час із родиною, дотримуйтеся правил особистої гігієни та будьте здорові!
-
-      Дізнавайтеся інформацію щодо коронавірусу з офіційних джерел.
-
-      https://t.me/covid19_ternopil
-      TEXT
-    end
-
     private def handle_with(obj, klass)
       time = Time.utc
       logger.info "> #{obj.class.name} #{obj.to_json}"
