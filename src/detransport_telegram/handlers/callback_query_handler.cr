@@ -42,7 +42,7 @@ module DetransportTelegram
         else
           routes.each { |el| io << el << "\n" }
         end
-      end.to_s
+      end
     end
   end
 end
