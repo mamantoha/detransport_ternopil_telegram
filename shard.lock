@@ -2,7 +2,7 @@ version: 1.0
 shards:
   ameba:
     github: crystal-ameba/ameba
-    version: 0.12.0
+    version: 0.12.1
 
   convex_hull:
     github: geocrystal/convex_hull
@@ -10,15 +10,15 @@ shards:
 
   crest:
     github: mamantoha/crest
-    version: 0.24.1
+    version: 0.25.0
 
   db:
     github: crystal-lang/crystal-db
-    version: 0.8.0
+    version: 0.9.0
 
   dotenv:
     github: gdotdesign/cr-dotenv
-    version: 0.6.0
+    version: 0.7.0
 
   geo:
     github: geocrystal/geo
@@ -42,7 +42,7 @@ shards:
 
   i18n_plural_rules:
     github: mamantoha/i18n_plural_rules
-    version: 0.1.0
+    version: 0.1.1
 
   ifrit:
     github: imdrasil/ifrit
@@ -62,7 +62,7 @@ shards:
 
   pg:
     github: will/crystal-pg
-    version: 0.20.0
+    version: 0.21.0
 
   sam:
     github: imdrasil/sam.cr
@@ -70,5 +70,5 @@ shards:
 
   telegram_bot:
     github: hangyas/telegram_bot
-    commit: c46f930d19f394c0e26b3ddc77e967916c12bb08
+    commit: 39e0914d52925b57636bc32420961a308ed01b8b
 
