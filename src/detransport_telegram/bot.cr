@@ -8,10 +8,6 @@ module DetransportTelegram
       super(Config.telegram_bot_name, Config.telegram_token)
     end
 
-    protected def logger : Logger
-      DetransportTelegram.logger
-    end
-
     def handle(message : TelegramBot::Message)
       handle_with(message, DetransportTelegram::MessageHandler)
     end
