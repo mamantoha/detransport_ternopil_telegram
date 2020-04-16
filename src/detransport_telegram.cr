@@ -1,4 +1,4 @@
-require "logger"
+require "log"
 require "json"
 require "telegram_bot"
 require "dotenv"
@@ -22,11 +22,21 @@ I18n.default_locale = "uk"
 module DetransportTelegram
   VERSION = "0.1.0"
 
+  Log = ::Log.for(self)
+  Log.level = :debug
+
+  log_file = File.new("#{__DIR__}/../log/telegram.log", "a")
+  stdout = STDOUT
+
+  writer = IO::MultiWriter.new(log_file, stdout)
+
+  Log.backend = ::Log::IOBackend.new(writer)
+
   def self.run
     Dotenv.load
 
     bot = DetransportTelegram::Bot.new
-    logger.info "DetransportTelegram started."
+    Log.info { "DetransportTelegram started." }
     bot.polling
   end
 end
