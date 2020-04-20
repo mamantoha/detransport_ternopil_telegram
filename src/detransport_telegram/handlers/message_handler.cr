@@ -14,6 +14,8 @@ module DetransportTelegram
       elsif message_location = message.location
         handle_covid19_message
         handle_location(message_location)
+      else
+        nil
       end
     end
 
@@ -44,6 +46,8 @@ module DetransportTelegram
           stop_id = m[1].to_i
           handle_stop_info(stop_id)
         end
+      else
+        nil
       end
     end
 

@@ -9,6 +9,6 @@ Jennifer::Config.configure do |conf|
 
   writer = IO::MultiWriter.new(log_file, stdout)
 
-  conf.logger = Logger.new(writer)
-  conf.logger.level = Logger::DEBUG
+  conf.logger = ::Log.for("db", :debug)
+  conf.logger.backend = ::Log::IOBackend.new(writer)
 end
