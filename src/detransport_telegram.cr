@@ -1,3 +1,5 @@
+alias CallStack = Exception::CallStack
+
 require "log"
 require "json"
 require "telegram_bot"
