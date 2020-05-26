@@ -12,7 +12,6 @@ module DetransportTelegram
       if message_text = message.text
         handle_text(message, message_text)
       elsif message_location = message.location
-        handle_covid19_message
         handle_location(message_location)
       else
         nil
@@ -23,7 +22,6 @@ module DetransportTelegram
       if text.starts_with?("/")
         handle_commands(message, text)
       else
-        handle_covid19_message
         handle_similar_stops(text)
       end
     end
@@ -49,24 +47,6 @@ module DetransportTelegram
       else
         nil
       end
-    end
-
-    private def handle_covid19_message
-      text = <<-TEXT
-      На період карантину в Тернополі призупининено роботу громадського транспорту.
-
-      Натомість курсуватимуть спецрейси.
-
-      Спецрейси перевозитимуть виключно працівників медичних установ, аварійних та комунальних служб, правоохоронців та інших служб, які повинні забезпечувати життя міста в умовах карантину.
-
-      Під час карантину залишайтеся вдома! Подбайте про самоізоляцію. Проводьте час із родиною, дотримуйтеся правил особистої гігієни та будьте здорові!
-
-      Дізнавайтеся інформацію щодо коронавірусу з офіційних джерел.
-
-      https://t.me/covid19_ternopil
-      TEXT
-
-      bot.send_message(chat_id, text)
     end
 
     private def handle_similar_stops(stop : String)
