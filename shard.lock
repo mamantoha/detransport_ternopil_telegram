@@ -58,7 +58,7 @@ shards:
 
   jennifer:
     github: imdrasil/jennifer.cr
-    commit: 97a1af1b710531cc672bb00ed1957e8ce61c1c46
+    version: 0.9.0
 
   pg:
     github: will/crystal-pg
