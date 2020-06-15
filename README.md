@@ -30,8 +30,8 @@ Copy `.env.example` to `.env` and set variables
 Copy `db/database.yml.example` to `db/database.yml` and set PostgreSQL variables
 
 ```console
-crystal sam.cr -- db:setup
-crystal sam.cr -- db:migrate
+crystal sam.cr db:setup
+crystal sam.cr db:migrate
 ```
 
 ### Run
