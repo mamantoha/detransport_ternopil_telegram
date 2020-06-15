@@ -11,8 +11,8 @@ dependencies:
   crest:
     github: mamantoha/crest
   telegram_bot:
-    github: hangyas/telegram_bot
-    branch: master
+    github: mamantoha/telegram_bot
+    branch: develop
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
@@ -23,6 +23,7 @@ dependencies:
     github: mamantoha/humanize_time
   jennifer:
     github: imdrasil/jennifer.cr
+    branch: master
   pg:
     github: will/crystal-pg
   sam:
@@ -39,6 +40,6 @@ targets:
   detransport_telegram:
     main: src/detransport_telegram.cr
 
-crystal: 0.34.0
+crystal: 0.35.0
 
 license: MIT

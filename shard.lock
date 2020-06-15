@@ -1,74 +1,74 @@
-version: 1.0
+version: 2.0
 shards:
   ameba:
-    github: crystal-ameba/ameba
+    git: https://github.com/crystal-ameba/ameba.git
     version: 0.12.1
 
   convex_hull:
-    github: geocrystal/convex_hull
-    version: 0.1.0
+    git: https://github.com/geocrystal/convex_hull.git
+    version: 0.2.0
 
   crest:
-    github: mamantoha/crest
-    version: 0.25.0
+    git: https://github.com/mamantoha/crest.git
+    version: 0.25.1
 
   db:
-    github: crystal-lang/crystal-db
+    git: https://github.com/crystal-lang/crystal-db.git
     version: 0.9.0
 
   dotenv:
-    github: gdotdesign/cr-dotenv
+    git: https://github.com/gdotdesign/cr-dotenv.git
     version: 0.7.0
 
   geo:
-    github: geocrystal/geo
-    version: 0.6.0
+    git: https://github.com/geocrystal/geo.git
+    version: 0.6.1
 
   haversine:
-    github: geocrystal/haversine
+    git: https://github.com/geocrystal/haversine.git
     version: 0.2.2
 
   http-client-digest_auth:
-    github: mamantoha/http-client-digest_auth
-    version: 0.3.0
+    git: https://github.com/mamantoha/http-client-digest_auth.git
+    version: 0.4.0
 
   humanize_time:
-    github: mamantoha/humanize_time
+    git: https://github.com/mamantoha/humanize_time.git
     version: 0.6.0
 
   i18n:
-    github: TechMagister/i18n.cr
+    git: https://github.com/TechMagister/i18n.cr.git
     version: 0.3.1
 
   i18n_plural_rules:
-    github: mamantoha/i18n_plural_rules
+    git: https://github.com/mamantoha/i18n_plural_rules.git
     version: 0.1.1
 
   ifrit:
-    github: imdrasil/ifrit
+    git: https://github.com/imdrasil/ifrit.git
     version: 0.1.2
 
   inflector:
-    github: phoffer/inflector.cr
+    git: https://github.com/phoffer/inflector.cr.git
     version: 0.1.8
 
   jaro_winkler:
-    github: kostya/jaro_winkler
+    git: https://github.com/kostya/jaro_winkler.git
     version: 0.2
 
   jennifer:
-    github: imdrasil/jennifer.cr
-    version: 0.9.0
+    git: https://github.com/imdrasil/jennifer.cr.git
+    version: 0.9.0+git.commit.7042ffd16550baaca7de2f9162e92a9ac35b642f
 
   pg:
-    github: will/crystal-pg
-    version: 0.21.0
+    git: https://github.com/will/crystal-pg.git
+    version: 0.21.1
 
   sam:
-    github: imdrasil/sam.cr
+    git: https://github.com/imdrasil/sam.cr.git
     version: 0.3.2
 
   telegram_bot:
-    github: hangyas/telegram_bot
-    commit: 39e0914d52925b57636bc32420961a308ed01b8b
+    git: https://github.com/mamantoha/telegram_bot.git
+    version: 0.1.0+git.commit.54309047e142de240b14ef67cd8da9797d48d8a4
 
