@@ -40,6 +40,6 @@ targets:
   detransport_telegram:
     main: src/detransport_telegram.cr
 
-crystal: 0.35.0
+crystal: ">= 0.35.1"
 
 license: MIT
