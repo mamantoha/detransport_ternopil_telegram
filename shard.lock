@@ -2,7 +2,7 @@ version: 2.0
 shards:
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.0
+    version: 0.13.1
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -74,5 +74,5 @@ shards:
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
-    version: 0.1.0+git.commit.54309047e142de240b14ef67cd8da9797d48d8a4
+    version: 0.1.0+git.commit.120b9215fbea35115f6673ef41ef05e5f6b82487
 
