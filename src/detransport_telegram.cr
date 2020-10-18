@@ -40,7 +40,16 @@ module DetransportTelegram
     Dotenv.load
 
     bot = DetransportTelegram::Bot.new
+
     Log.info { "DetransportTelegram started." }
+
+    commands = [
+      TelegramBot::BotCommand.new(command: "help", description: "інформація про бота"),
+      TelegramBot::BotCommand.new(command: "ping", description: "pong 🏓"),
+    ]
+
+    bot.set_my_commands(commands)
+
     bot.polling
   end
 end
