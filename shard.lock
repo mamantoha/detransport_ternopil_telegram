@@ -2,7 +2,7 @@ version: 2.0
 shards:
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.1
+    version: 0.13.2
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -14,7 +14,7 @@ shards:
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.9.0
+    version: 0.10.0
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git
@@ -26,7 +26,7 @@ shards:
 
   haversine:
     git: https://github.com/geocrystal/haversine.git
-    version: 0.2.2
+    version: 0.3.0
 
   http-client-digest_auth:
     git: https://github.com/mamantoha/http-client-digest_auth.git
@@ -62,11 +62,11 @@ shards:
 
   jennifer:
     git: https://github.com/imdrasil/jennifer.cr.git
-    version: 0.9.0+git.commit.4a9d552a96d08c3116f0e2d91d5a16e7a3fb9e76
+    version: 0.9.0+git.commit.22bbaa466856594ef601589faae25320c8aa3f20
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.21.1
+    version: 0.22.1
 
   sam:
     git: https://github.com/imdrasil/sam.cr.git
@@ -74,5 +74,5 @@ shards:
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
-    version: 0.1.0+git.commit.120b9215fbea35115f6673ef41ef05e5f6b82487
+    version: 0.2.1+git.commit.2368a55f82e6a7306c5eaff7805a8361ba2ac990
 
