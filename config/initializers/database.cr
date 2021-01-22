@@ -1,14 +1,14 @@
-require "jennifer"
-require "jennifer/adapter/postgres"
+require "clear"
+require "../../src/models/*"
 
-Jennifer::Config.read("config/database.yml", :development)
+Clear::SQL.init(ENV["DATABASE_URL"])
 
-Jennifer::Config.configure do |conf|
-  log_file = File.new("#{__DIR__}/../../log/jennifer.log", "a")
-  stdout = STDOUT
+log_file =
+  case ENV["CRYSTAL_ENV"]
+  when "production"
+    File.new("#{__DIR__}/../../log/clear.log", "a+")
+  else
+    STDOUT
+  end
 
-  writer = IO::MultiWriter.new(log_file, stdout)
-
-  conf.logger = ::Log.for("db", :debug)
-  conf.logger.backend = ::Log::IOBackend.new(writer)
-end
+Log.builder.bind "clear.*", :debug, Log::IOBackend.new(log_file)

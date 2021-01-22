@@ -5,7 +5,6 @@
 require "log"
 require "json"
 require "telegram_bot"
-require "dotenv"
 require "geo"
 require "haversine"
 require "crest"
@@ -14,14 +13,11 @@ require "i18n"
 require "humanize_time"
 require "./detransport_telegram/*"
 
-require "../config/initializers/database"
-require "./models/*"
+require "../config/config"
 
-I18n::Backend::Yaml.embed(["#{__DIR__}/locales"])
-
+I18n.config.loaders << I18n::Loader::YAML.new("#{__DIR__}/locales")
+I18n.config.default_locale = :uk
 I18n.init
-
-I18n.default_locale = "uk"
 
 module DetransportTelegram
   VERSION = "0.1.0"

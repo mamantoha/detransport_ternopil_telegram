@@ -16,22 +16,17 @@ dependencies:
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
-    github: TechMagister/i18n.cr
-  i18n_plural_rules:
-    github: mamantoha/i18n_plural_rules
+    github: crystal-i18n/i18n
   humanize_time:
     github: mamantoha/humanize_time
-  jennifer:
-    github: imdrasil/jennifer.cr
+  clear:
+    github: anykeyh/clear
     branch: master
-  pg:
-    github: will/crystal-pg
-  sam:
-    github: imdrasil/sam.cr
 
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
+    branch: develop
 
 authors:
   - Anton Maminov <anton.maminov@gmail.com>

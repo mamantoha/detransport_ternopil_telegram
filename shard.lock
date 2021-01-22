@@ -1,16 +1,24 @@
 version: 2.0
 shards:
+  admiral:
+    git: https://github.com/jwaldrip/admiral.cr.git
+    version: 1.11.2+git.commit.c3c3467953654554b72c24e7b853d6fbb23f10c0
+
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.2
+    version: 0.13.3+git.commit.79ff1f75dba2be2446d9c6215ff4e50509b9ed0b
+
+  clear:
+    git: https://github.com/anykeyh/clear.git
+    version: 0.9+git.commit.3bdaa44a7d0382fd8f6846afe8b8da95d58d9452
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
-    version: 0.2.0
+    version: 0.2.1
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 0.26.1
+    version: 0.26.4
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -20,37 +28,33 @@ shards:
     git: https://github.com/gdotdesign/cr-dotenv.git
     version: 0.7.0
 
+  generate:
+    git: https://github.com/anykeyh/generate.cr.git
+    version: 0.1.0+git.commit.27a59d663ded8ce39a361e3a88b8dd747f59ce42
+
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.6.1
+    version: 0.6.2
 
   haversine:
     git: https://github.com/geocrystal/haversine.git
-    version: 0.3.0
+    version: 0.3.1
 
   http-client-digest_auth:
     git: https://github.com/mamantoha/http-client-digest_auth.git
-    version: 0.4.0
+    version: 0.5.0
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.7.1
+    version: 0.7.3
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.6.0
+    version: 0.8.1
 
   i18n:
-    git: https://github.com/TechMagister/i18n.cr.git
-    version: 0.3.1
-
-  i18n_plural_rules:
-    git: https://github.com/mamantoha/i18n_plural_rules.git
-    version: 0.1.1
-
-  ifrit:
-    git: https://github.com/imdrasil/ifrit.git
-    version: 0.1.2
+    git: https://github.com/crystal-i18n/i18n.git
+    version: 0.1.3
 
   inflector:
     git: https://github.com/phoffer/inflector.cr.git
@@ -60,19 +64,11 @@ shards:
     git: https://github.com/kostya/jaro_winkler.git
     version: 0.2
 
-  jennifer:
-    git: https://github.com/imdrasil/jennifer.cr.git
-    version: 0.9.0+git.commit.22bbaa466856594ef601589faae25320c8aa3f20
-
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.22.1
-
-  sam:
-    git: https://github.com/imdrasil/sam.cr.git
-    version: 0.4.0
+    version: 0.23.0+git.commit.cafec1e131427b65b47e82a8f9b3cb3f602c2cb2
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
-    version: 0.2.1+git.commit.2368a55f82e6a7306c5eaff7805a8361ba2ac990
+    version: 0.2.2+git.commit.0991b6a0d681714e42c37aa0c8282133d8c38863
 
