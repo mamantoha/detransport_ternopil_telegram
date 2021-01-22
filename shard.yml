@@ -34,6 +34,8 @@ authors:
 targets:
   detransport_telegram:
     main: src/detransport_telegram.cr
+  db:
+    main: src/db.cr
 
 crystal: ">= 0.35.1"
 
