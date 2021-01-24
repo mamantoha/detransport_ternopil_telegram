@@ -15,6 +15,8 @@ dependencies:
     branch: develop
   jaro_winkler:
     github: kostya/jaro_winkler
+  deep-merge:
+    github: peterhoeg/deep-merge.cr
   i18n:
     github: crystal-i18n/i18n
   humanize_time:

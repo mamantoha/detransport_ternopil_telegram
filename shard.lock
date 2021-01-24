@@ -6,7 +6,7 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.3+git.commit.79ff1f75dba2be2446d9c6215ff4e50509b9ed0b
+    version: 0.13.3+git.commit.8b52dc4b1d12ec227e8ecca61f9a361f8dc4bc67
 
   clear:
     git: https://github.com/anykeyh/clear.git
@@ -23,6 +23,10 @@ shards:
   db:
     git: https://github.com/crystal-lang/crystal-db.git
     version: 0.10.0
+
+  deep-merge:
+    git: https://github.com/peterhoeg/deep-merge.cr.git
+    version: 0.1.0
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git

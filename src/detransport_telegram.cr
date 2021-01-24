@@ -5,14 +5,16 @@ require "geo"
 require "haversine"
 require "crest"
 require "jaro_winkler"
+require "deep-merge"
 require "i18n"
 require "humanize_time"
 require "./detransport_telegram/*"
 
 require "../config/config"
+require "./detransport_telegram/ext/i18n"
 
 I18n.config.loaders << I18n::Loader::YAML.new("#{__DIR__}/locales")
-I18n.config.default_locale = :uk
+I18n.config.default_locale = "uk"
 I18n.init
 
 module DetransportTelegram
