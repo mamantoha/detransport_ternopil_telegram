@@ -6,7 +6,7 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.3+git.commit.8b52dc4b1d12ec227e8ecca61f9a361f8dc4bc67
+    version: 0.13.4
 
   clear:
     git: https://github.com/anykeyh/clear.git
