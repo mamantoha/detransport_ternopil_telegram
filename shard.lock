@@ -70,5 +70,5 @@ shards:
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
-    version: 0.2.2+git.commit.0991b6a0d681714e42c37aa0c8282133d8c38863
+    version: 0.2.2
 
