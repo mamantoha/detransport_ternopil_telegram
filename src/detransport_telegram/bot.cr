@@ -18,7 +18,7 @@ module DetransportTelegram
 
     private def handle_with(obj, klass)
       time = Time.utc
-      Log.info { "> #{obj.class.name} #{obj.to_json}" }
+      DetransportTelegram::Log.info { "> #{obj.class.name} #{obj.to_json}" }
 
       if user = load_user(obj)
         user.touch
@@ -26,10 +26,10 @@ module DetransportTelegram
 
       klass.new(obj, self).handle
 
-      Log.debug { "Handled #{obj.class.name} in #{Time.utc - time}" }
+      DetransportTelegram::Log.debug { "Handled #{obj.class.name} in #{Time.utc - time}" }
       true
     rescue e
-      Log.error { e.inspect_with_backtrace }
+      DetransportTelegram::Log.error { e.inspect_with_backtrace }
       false
     end
 
