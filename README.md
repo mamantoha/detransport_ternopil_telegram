@@ -27,11 +27,12 @@ Copy `.env.example` to `.env` and set variables
 
 ### Setup Database
 
-Copy `db/database.yml.example` to `db/database.yml` and set PostgreSQL variables
+```
+psql -c 'CREATE DATABASE detransport_ternopil_development;' -U postgres
+```
 
 ```console
-crystal sam.cr db:setup
-crystal sam.cr db:migrate
+crystal src/db.cr migrate
 ```
 
 ### Run

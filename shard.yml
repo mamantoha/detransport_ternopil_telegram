@@ -12,22 +12,14 @@ dependencies:
     github: mamantoha/crest
   telegram_bot:
     github: mamantoha/telegram_bot
-    branch: develop
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
-    github: TechMagister/i18n.cr
-  i18n_plural_rules:
-    github: mamantoha/i18n_plural_rules
+    github: crystal-i18n/i18n
   humanize_time:
     github: mamantoha/humanize_time
-  jennifer:
-    github: imdrasil/jennifer.cr
-    branch: master
-  pg:
-    github: will/crystal-pg
-  sam:
-    github: imdrasil/sam.cr
+  clear:
+    github: anykeyh/clear
 
 development_dependencies:
   ameba:
@@ -39,7 +31,9 @@ authors:
 targets:
   detransport_telegram:
     main: src/detransport_telegram.cr
+  db:
+    main: src/db.cr
 
-crystal: ">= 0.35.1"
+crystal: ">= 0.36.0"
 
 license: MIT

@@ -21,8 +21,7 @@ module DetransportTelegram
       Log.info { "> #{obj.class.name} #{obj.to_json}" }
 
       if user = load_user(obj)
-        user.updated_at = Time.local(Jennifer::Config.local_time_zone)
-        user.save
+        user.touch
       end
 
       klass.new(obj, self).handle
@@ -36,16 +35,12 @@ module DetransportTelegram
 
     private def load_user(msg) : User?
       if telegram_user = msg.from
-        if user = User.where { _telegram_id == telegram_user.id }.first
-          user
-        else
-          User.create(
-            telegram_id: telegram_user.id,
-            first_name: telegram_user.first_name,
-            last_name: telegram_user.last_name,
-            username: telegram_user.username,
-            language_code: telegram_user.language_code
-          )
+        User.query.find_or_create(telegram_id: telegram_user.id) do |user|
+          user.telegram_id = telegram_user.id
+          user.first_name = telegram_user.first_name
+          user.last_name = telegram_user.last_name
+          user.username = telegram_user.username
+          user.language_code = telegram_user.language_code
         end
       end
     end

@@ -1,15 +1,21 @@
-class CreateUser < Jennifer::Migration::Base
-  def up
-    create_table(:users) do |t|
-      t.integer :telegram_id
-      t.string :first_name
-      t.string :username
-      t.string :language_code
-      t.timestamps
-    end
-  end
+class CreateUser
+  include Clear::Migration
 
-  def down
-    drop_table :users
+  def change(direction)
+    direction.up do
+      create_table(:users) do |t|
+        t.column :telegram_id, :integer, null: false
+        t.column :first_name, :string
+        t.column :last_name, :string
+        t.column :username, :string
+        t.column :language_code, :string
+
+        t.timestamps
+      end
+    end
+
+    direction.down do
+      execute("DROP TABLE users")
+    end
   end
 end
