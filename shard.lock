@@ -2,11 +2,11 @@ version: 2.0
 shards:
   admiral:
     git: https://github.com/jwaldrip/admiral.cr.git
-    version: 1.11.2+git.commit.91df71243271debfeb46fe751b4b9d8892ab6f2d
+    version: 1.12.1+git.commit.211937b64b753b86ccbe86a72122be30e294e31a
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.14.0
+    version: 0.14.3
 
   clear:
     git: https://github.com/anykeyh/clear.git
@@ -18,19 +18,19 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 0.26.7
+    version: 0.27.0
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.10.0
+    version: 0.10.1
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git
-    version: 0.7.0
+    version: 1.0.0
 
   generate:
     git: https://github.com/anykeyh/generate.cr.git
-    version: 0.1.0+git.commit.27a59d663ded8ce39a361e3a88b8dd747f59ce42
+    version: 0.1.0+git.commit.f5dafc934a70e0ee2f246dddf3df44686f844da2
 
   geo:
     git: https://github.com/geocrystal/geo.git
@@ -50,11 +50,11 @@ shards:
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.9.0
+    version: 0.10.1
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
-    version: 0.1.4
+    version: 0.2.0
 
   inflector:
     git: https://github.com/phoffer/inflector.cr.git
@@ -66,9 +66,9 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.23.1+git.commit.cafe039cfd6340a271e81603943bb1975f5a91f5
+    version: 0.23.2+git.commit.69e8605eeef3879e217a6210f495a26aecd94259
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
-    version: 0.2.2
+    version: 0.3.0
 
