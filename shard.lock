@@ -2,7 +2,7 @@ version: 2.0
 shards:
   admiral:
     git: https://github.com/jwaldrip/admiral.cr.git
-    version: 1.12.1+git.commit.211937b64b753b86ccbe86a72122be30e294e31a
+    version: 1.12.1
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
@@ -10,7 +10,7 @@ shards:
 
   clear:
     git: https://github.com/anykeyh/clear.git
-    version: 0.9
+    version: 0.9+git.commit.dc5bcec0b5fa6871d479d487ab7cfc5e5b1ba16c
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -18,7 +18,7 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 0.27.0
+    version: 1.0.0
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -57,8 +57,8 @@ shards:
     version: 0.2.0
 
   inflector:
-    git: https://github.com/phoffer/inflector.cr.git
-    version: 0.1.8
+    git: https://github.com/anykeyh/inflector.cr.git
+    version: 0.1.8+git.commit.dc5c898b0a834617d8b3ff73ac5a2239bd9fc019
 
   jaro_winkler:
     git: https://github.com/kostya/jaro_winkler.git
@@ -66,7 +66,7 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.23.1+git.commit.cafe039cfd6340a271e81603943bb1975f5a91f5
+    version: 0.24.0
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
