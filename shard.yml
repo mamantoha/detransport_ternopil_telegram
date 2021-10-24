@@ -16,8 +16,10 @@ dependencies:
     github: kostya/jaro_winkler
   i18n:
     github: crystal-i18n/i18n
+    branch: main
   humanize_time:
     github: mamantoha/humanize_time
+    branch: master
   clear:
     github: anykeyh/clear
     branch: master

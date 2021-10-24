@@ -50,11 +50,11 @@ shards:
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.10.1
+    version: 0.10.1+git.commit.4de5846962803f6f842226b139d15797ec944403
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
-    version: 0.2.0
+    version: 0.2.0+git.commit.c3da49b50495df3f27caa55beada8f151ae1be48
 
   inflector:
     git: https://github.com/anykeyh/inflector.cr.git
