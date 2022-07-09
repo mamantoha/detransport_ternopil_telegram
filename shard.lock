@@ -6,11 +6,11 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.14.3
+    version: 1.0.0
 
   clear:
-    git: https://github.com/anykeyh/clear.git
-    version: 0.9+git.commit.480289555c833793fa6964398fefec6b7e25168d
+    git: https://github.com/crystal-garage/clear.git
+    version: 0.8.10+git.commit.e3b958b06d20ee2f57d1d03a00a33eff7df0cf6c
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -18,11 +18,11 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.0.1
+    version: 1.3.1
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.10.1
+    version: 0.11.0
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git
@@ -46,19 +46,19 @@ shards:
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.8.0
+    version: 0.9.0
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.10.2
+    version: 0.11.0
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
     version: 0.2.1
 
   inflector:
-    git: https://github.com/anykeyh/inflector.cr.git
-    version: 0.1.8+git.commit.dc5c898b0a834617d8b3ff73ac5a2239bd9fc019
+    git: https://github.com/phoffer/inflector.cr.git
+    version: 1.0.0
 
   jaro_winkler:
     git: https://github.com/kostya/jaro_winkler.git
@@ -66,7 +66,7 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.24.0
+    version: 0.26.0
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git

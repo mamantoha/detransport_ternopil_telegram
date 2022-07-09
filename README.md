@@ -29,7 +29,7 @@ psql -c 'CREATE DATABASE detransport_ternopil_development;' -U postgres
 ```
 
 ```console
-crystal src/db.cr migrate
+crystal ./src/db.cr migrate
 ```
 
 ### Run

@@ -35,7 +35,7 @@ module DetransportTelegram
 
     private def load_user(msg) : User?
       if telegram_user = msg.from
-        User.query.find_or_create(telegram_id: telegram_user.id) do |user|
+        User.query.find_or_create({telegram_id: telegram_user.id}) do |user|
           user.telegram_id = telegram_user.id
           user.first_name = telegram_user.first_name
           user.last_name = telegram_user.last_name
