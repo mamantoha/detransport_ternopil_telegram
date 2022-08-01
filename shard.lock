@@ -14,7 +14,7 @@ shards:
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
-    version: 0.2.1
+    version: 0.3.0
 
   crest:
     git: https://github.com/mamantoha/crest.git
@@ -34,7 +34,11 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.6.2
+    version: 0.7.0
+
+  geohash:
+    git: https://github.com/geocrystal/geohash.git
+    version: 0.1.1
 
   haversine:
     git: https://github.com/geocrystal/haversine.git
