@@ -6,7 +6,7 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 1.0.0
+    version: 1.1.0
 
   clear:
     git: https://github.com/crystal-garage/clear.git
@@ -14,7 +14,7 @@ shards:
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
-    version: 0.3.0
+    version: 0.5.0
 
   crest:
     git: https://github.com/mamantoha/crest.git
