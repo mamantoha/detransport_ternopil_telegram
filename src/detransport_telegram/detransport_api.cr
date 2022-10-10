@@ -37,6 +37,8 @@ module DetransportTelegram
 
       def similar_to(name : String, count = 9)
         similar_stops = stops.sort_by do |stop|
+          return 1 if name.size >= 4 && stop.name.downcase.includes?(name.downcase)
+
           JaroWinkler.new.distance(name.downcase, stop.name.sub("вул. ", "").downcase)
         end
 
