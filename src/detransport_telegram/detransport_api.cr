@@ -37,7 +37,7 @@ module DetransportTelegram
 
       def similar_to(name : String, count = 9)
         similar_stops = stops.sort_by do |stop|
-          JaroWinkler.new(ignore_case: true).distance(name, stop.name.sub("вул. ", ""))
+          JaroWinkler.new.distance(name.downcase, stop.name.sub("вул. ", "").downcase)
         end
 
         similar_stops.reverse.first(count)
