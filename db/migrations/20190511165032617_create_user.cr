@@ -1,8 +1,8 @@
 class CreateUser
   include Clear::Migration
 
-  def change(direction)
-    direction.up do
+  def change(dir)
+    dir.up do
       create_table(:users) do |t|
         t.column :telegram_id, :integer, null: false
         t.column :first_name, :string
@@ -14,7 +14,7 @@ class CreateUser
       end
     end
 
-    direction.down do
+    dir.down do
       execute("DROP TABLE users")
     end
   end
