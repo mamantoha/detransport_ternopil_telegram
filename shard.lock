@@ -6,7 +6,7 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 1.1.0
+    version: 1.2.0
 
   clear:
     git: https://github.com/crystal-garage/clear.git
