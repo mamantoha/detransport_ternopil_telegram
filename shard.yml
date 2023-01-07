@@ -37,6 +37,6 @@ targets:
   db:
     main: src/db.cr
 
-crystal: 1.6.0
+crystal: 1.6.2
 
 license: MIT

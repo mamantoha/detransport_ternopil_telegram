@@ -6,11 +6,11 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 1.3.0
+    version: 1.3.1
 
   clear:
     git: https://github.com/crystal-garage/clear.git
-    version: 0.8.13+git.commit.a0984105adacc22204a88d628b45677e43519f33
+    version: 0.8.15+git.commit.eae8262d07b84a67ce552dba6b77229ab0c43488
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
