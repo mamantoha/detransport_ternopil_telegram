@@ -1,6 +1,8 @@
 name: detransport_ternopil_telegram
 version: 0.1.0
 
+crystal: 1.7.0
+
 dependencies:
   dotenv:
     github: gdotdesign/cr-dotenv
@@ -36,7 +38,5 @@ targets:
     main: src/detransport_telegram.cr
   db:
     main: src/db.cr
-
-crystal: 1.6.2
 
 license: MIT
