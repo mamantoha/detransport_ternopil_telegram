@@ -6,7 +6,7 @@ shards:
 
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 1.3.1
+    version: 1.4.3
 
   clear:
     git: https://github.com/crystal-garage/clear.git
@@ -18,7 +18,7 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.3.7
+    version: 1.3.8
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -54,7 +54,7 @@ shards:
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.12.0
+    version: 0.12.1
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
