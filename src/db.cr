@@ -1,6 +1,6 @@
 require "clear/cli"
 
 require "../config/config"
-require "../db/migrations/*"
+require "./db/migrations/*"
 
 Clear::CLI.run
