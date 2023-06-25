@@ -3,7 +3,7 @@ class User
 
   primary_key
 
-  column telegram_id : Int32
+  column telegram_id : Int64
   column first_name : String
   column last_name : String?
   column username : String?

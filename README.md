@@ -73,6 +73,14 @@ sudo systemctl enable detransport_tenopil_telegram
 sudo systemctl start detransport_ternopil_telegram
 ```
 
+## Development
+
+```
+crystal ./src/db.cr generate migration add_field_to_table
+crystal ./src/db.cr migrate
+crystal ./src/db.cr migrate rollback
+```
+
 ## Contributing
 
 1. Fork it (<https://github.com/mamantoha/detransport_telegram/fork>)
