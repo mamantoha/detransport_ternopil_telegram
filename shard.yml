@@ -26,10 +26,6 @@ dependencies:
     # github: anykeyh/clear
     # branch: master
 
-development_dependencies:
-  ameba:
-    github: crystal-ameba/ameba
-
 authors:
   - Anton Maminov <anton.maminov@gmail.com>
 

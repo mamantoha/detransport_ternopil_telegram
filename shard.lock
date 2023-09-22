@@ -4,13 +4,9 @@ shards:
     git: https://github.com/jwaldrip/admiral.cr.git
     version: 1.12.1
 
-  ameba:
-    git: https://github.com/crystal-ameba/ameba.git
-    version: 1.4.3
-
   clear:
     git: https://github.com/crystal-garage/clear.git
-    version: 0.8.15+git.commit.16961f16143066b7b96a584c27f98eee8152e65f
+    version: 0.8.17+git.commit.826e96d9b9d571d19c642094eb05c6c58de8e4c6
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -18,11 +14,11 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.3.11
+    version: 1.3.12
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.11.0
+    version: 0.12.0
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git
@@ -70,7 +66,7 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.26.0
+    version: 0.27.0
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
