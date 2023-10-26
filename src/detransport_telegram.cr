@@ -38,6 +38,7 @@ module DetransportTelegram
     commands = [
       TelegramBot::BotCommand.new(command: "help", description: "інформація про бота"),
       TelegramBot::BotCommand.new(command: "ping", description: "pong 🏓"),
+      TelegramBot::BotCommand.new(command: "about", description: "🤖"),
     ]
 
     bot.set_my_commands(commands)
