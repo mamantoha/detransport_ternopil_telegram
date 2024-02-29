@@ -66,7 +66,7 @@ WantedBy=multi-user.target
 ```
 
 ```console
-sudo systemctl enable detransport_tenopil_telegram
+sudo systemctl enable detransport_tenopil_telegram.service
 ```
 
 ```console
