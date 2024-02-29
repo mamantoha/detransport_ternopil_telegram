@@ -7,12 +7,12 @@ default: &default
 
 development:
   <<: *default
-  db: detransport_development
+  db: detransport_ternopil_development
 
 test:
   <<: *default
-  db: detransport_test
+  db: detransport_ternopil_test
 
 production:
   <<: *default
-  db: detransport_production
+  db: detransport_ternopil_production
