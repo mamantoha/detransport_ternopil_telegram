@@ -26,6 +26,12 @@ dependencies:
     # github: anykeyh/clear
     # branch: master
 
+development_dependencies:
+  geojson:
+    github: geocrystal/geojson
+  geojson_area:
+    github: geocrystal/geojson_area
+
 authors:
   - Anton Maminov <anton.maminov@gmail.com>
 
