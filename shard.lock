@@ -6,7 +6,7 @@ shards:
 
   clear:
     git: https://github.com/crystal-garage/clear.git
-    version: 0.8.18+git.commit.9fc48261473c94962771875d47448e3817297c40
+    version: 0.8.19+git.commit.8be17f022c3389c5e8cef689c515d60a091aa3a6
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -30,7 +30,7 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.7.4
+    version: 0.7.5
 
   geo_bearing:
     git: https://github.com/geocrystal/geo_bearing.git
@@ -46,11 +46,11 @@ shards:
 
   geojson_area:
     git: https://github.com/geocrystal/geojson_area.git
-    version: 0.1.1
+    version: 0.2.0
 
   haversine:
     git: https://github.com/geocrystal/haversine.git
-    version: 0.4.0
+    version: 0.5.0
 
   http-client-digest_auth:
     git: https://github.com/mamantoha/http-client-digest_auth.git
@@ -79,6 +79,10 @@ shards:
   pg:
     git: https://github.com/will/crystal-pg.git
     version: 0.28.0
+
+  ring_area:
+    git: https://github.com/geocrystal/ring_area.git
+    version: 0.1.2
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
