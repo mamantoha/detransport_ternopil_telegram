@@ -6,7 +6,7 @@ shards:
 
   clear:
     git: https://github.com/crystal-garage/clear.git
-    version: 0.8.19+git.commit.8be17f022c3389c5e8cef689c515d60a091aa3a6
+    version: 0.8.21+git.commit.e4d13a65a41842343e80bfad05ce612279d3ec85
 
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
@@ -14,7 +14,7 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.3.13
+    version: 1.5.1
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -30,7 +30,7 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.7.5
+    version: 0.7.6
 
   geo_bearing:
     git: https://github.com/geocrystal/geo_bearing.git
@@ -46,7 +46,7 @@ shards:
 
   geojson_area:
     git: https://github.com/geocrystal/geojson_area.git
-    version: 0.2.0
+    version: 0.2.1
 
   haversine:
     git: https://github.com/geocrystal/haversine.git
@@ -58,15 +58,15 @@ shards:
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.10.3
+    version: 0.13.0
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.12.2
+    version: 0.12.5
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
-    version: 0.2.1
+    version: 0.2.2
 
   inflector:
     git: https://github.com/phoffer/inflector.cr.git
@@ -78,11 +78,11 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.28.0
+    version: 0.29.0
 
   ring_area:
     git: https://github.com/geocrystal/ring_area.git
-    version: 0.1.2
+    version: 0.2.1
 
   telegram_bot:
     git: https://github.com/mamantoha/telegram_bot.git
