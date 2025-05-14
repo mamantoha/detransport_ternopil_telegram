@@ -85,6 +85,6 @@ shards:
     version: 0.2.1
 
   telegram_bot:
-    git: https://github.com/mamantoha/telegram_bot.git
+    git: https://github.com/crystal-garage/telegram_bot.git
     version: 0.5.0
 

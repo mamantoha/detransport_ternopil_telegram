@@ -1,7 +1,7 @@
 name: detransport_ternopil_telegram
 version: 0.1.0
 
-crystal: 1.10.1
+crystal: 1.16.3
 
 dependencies:
   dotenv:
@@ -13,7 +13,7 @@ dependencies:
   crest:
     github: mamantoha/crest
   telegram_bot:
-    github: mamantoha/telegram_bot
+    github: crystal-garage/telegram_bot
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
@@ -23,8 +23,6 @@ dependencies:
   clear:
     github: crystal-garage/clear
     branch: develop
-    # github: anykeyh/clear
-    # branch: master
 
 development_dependencies:
   geojson:
