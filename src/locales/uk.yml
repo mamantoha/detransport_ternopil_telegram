@@ -16,6 +16,7 @@ uk:
     show_stop_info: Інформацію про зупинку
     vehicles_list: Доступний транспорт
     update_routes: Оновити розклад
+    last_updated: Останнє оновлення
     meters:
       one: "%{count} метр"
       few: "%{count} метри"

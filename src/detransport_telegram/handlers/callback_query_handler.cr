@@ -71,8 +71,12 @@ module DetransportTelegram
 
       stop_name = detransport_api.stops.stops.find { |s| s.id == stop_id.to_s }.try(&.name)
 
+      current_time = Time.local(Time::Location.load("Europe/Kyiv"))
+      formatted_time = current_time.to_s("%Y-%m-%d %H:%M:%S")
+
       String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
+        io << "_#{I18n.translate("messages.last_updated")}: #{formatted_time}_" << "\n"
         io << "#{I18n.translate("messages.show_stop_on_map")}: /map#{stop_id}" << "\n"
         io << "#{I18n.translate("messages.show_stop_info")}: /info#{stop_id}" << "\n"
         io << "\n"
