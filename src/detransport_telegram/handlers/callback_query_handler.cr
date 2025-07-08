@@ -59,6 +59,7 @@ module DetransportTelegram
       ]
       TelegramBot::InlineKeyboardMarkup.new(buttons)
     end
+
     private def routes_text(stop_id)
       detransport_api = DetransportTelegram::DetransportAPI.new
 
@@ -68,7 +69,8 @@ module DetransportTelegram
         arry << route.full_name
       end
 
-      stop_name = detransport_api.stops.stops.find { |s| s.id == stop_id }.try(&.name)
+      p! detransport_api.stops.stops
+      stop_name = detransport_api.stops.stops.find { |s| s.id == stop_id.to_s }.try(&.name)
 
       String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
