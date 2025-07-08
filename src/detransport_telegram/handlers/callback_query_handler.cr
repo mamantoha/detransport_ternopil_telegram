@@ -69,7 +69,6 @@ module DetransportTelegram
         arry << route.full_name
       end
 
-      p! detransport_api.stops.stops
       stop_name = detransport_api.stops.stops.find { |s| s.id == stop_id.to_s }.try(&.name)
 
       String::Builder.build do |io|
