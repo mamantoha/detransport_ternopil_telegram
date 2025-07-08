@@ -77,7 +77,7 @@ module DetransportTelegram
         io << "#{I18n.translate("messages.show_stop_info")}: /info#{stop_id}" << "\n"
         io << "\n"
         if routes.empty?
-          io << I18n.translate("messages.no_infomation") << "\n"
+          io << "🚫 #{I18n.translate("messages.no_infomation")}" << "\n"
         else
           routes.each { |el| io << el << "\n" }
         end

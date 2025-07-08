@@ -86,7 +86,11 @@ module DetransportTelegram
 
       buttons = [
         [
-          TelegramBot::KeyboardButton.new(I18n.translate("messages.share_location"), request_contact: false, request_location: true),
+          TelegramBot::KeyboardButton.new(
+            "📍 #{I18n.translate("messages.share_location")}",
+            request_contact: false,
+            request_location: true
+          ),
         ],
       ]
 
@@ -144,7 +148,7 @@ module DetransportTelegram
           io << "\n"
         end
       else
-        io << I18n.translate("messages.no_infomation")
+        io << "🚫 #{I18n.translate("messages.no_infomation")}"
       end
 
       bot.send_message(chat_id, io.to_s)

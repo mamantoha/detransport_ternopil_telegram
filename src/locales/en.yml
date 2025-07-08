@@ -10,8 +10,8 @@ en:
       - Send any message to list bus stations etc.
 
       - Send current location to locate the closest bus stop."
-    share_location: 📍 Share location
-    no_infomation: 🚫 No information available
+    share_location: Share location
+    no_infomation: No information available
     show_stop_on_map: Show bus stop on the map
     show_stop_info: Stop information
     vehicles_list: Vehicles
