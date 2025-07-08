@@ -4,7 +4,6 @@ en:
     nearest_stops: Nearest stops
     help: "*Telegram Bot for Ternopil citizens and city guests.*
 
-
       Helps them easily navigate public transport system.
       The bot features real time schedule of public transport.
 
@@ -16,6 +15,7 @@ en:
     show_stop_on_map: Show bus stop on the map
     show_stop_info: Stop information
     vehicles_list: Vehicles
+    update_routes: Update schedule
     meters:
       one: "%{count} meter"
       other: "%{count} meters"
