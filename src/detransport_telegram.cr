@@ -11,7 +11,7 @@ require "./detransport_telegram/*"
 
 require "../config/config"
 
-I18n.config.loaders << I18n::Loader::YAML.new("#{__DIR__}/locales")
+I18n.config.loaders << I18n::Loader::YAML.embed("#{__DIR__}/locales")
 I18n.config.default_locale = "uk"
 I18n.init
 
