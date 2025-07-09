@@ -19,6 +19,12 @@ module DetransportTelegram
         if callback_data.starts_with?("update_")
           stop_id = callback_data.sub("update_", "").to_i
           handle_update_routes(chat_id, stop_id)
+        elsif callback_data.starts_with?("map_")
+          stop_id = callback_data.sub("map_", "").to_i
+          handle_stop_location(chat_id, stop_id)
+        elsif callback_data.starts_with?("info_")
+          stop_id = callback_data.sub("info_", "").to_i
+          handle_stop_info(chat_id, stop_id)
         elsif callback_data == "delete_message"
           handle_delete_message(chat_id)
         else
@@ -50,6 +56,63 @@ module DetransportTelegram
       end
     end
 
+    private def handle_stop_location(chat_id : Int64, stop_id : Int32)
+      if stop = stops.get_by_id(stop_id.to_s)
+        coord = Geo::Coord.new(stop.lat.to_f, stop.lng.to_f)
+
+        buttons = [
+          [
+            TelegramBot::InlineKeyboardButton.new(
+              text: "🗑 #{I18n.translate("messages.delete_message")}",
+              callback_data: "delete_message"
+            ),
+          ],
+        ]
+
+        keyboard = TelegramBot::InlineKeyboardMarkup.new(buttons)
+
+        bot.send_venue(
+          chat_id,
+          latitude: stop.lat.to_f,
+          longitude: stop.lng.to_f,
+          title: stop.full_name,
+          address: "\n🧭 #{coord}",
+          reply_markup: keyboard
+        )
+      end
+    end
+
+    private def handle_stop_info(chat_id : Int64, stop_id : Int32)
+      io = String::Builder.new
+
+      if stop = stops.get_by_id(stop_id.to_s)
+        io << stop.full_name
+        io << "\n\n"
+        io << I18n.translate("messages.vehicles_list")
+        io << ":"
+        io << "\n\n"
+        stop.vehicles.each do |vehicle|
+          io << "#{vehicle.icon} #{vehicle.name}"
+          io << "\n"
+        end
+      else
+        io << "🚫 #{I18n.translate("messages.no_infomation")}"
+      end
+
+      buttons = [
+        [
+          TelegramBot::InlineKeyboardButton.new(
+            text: "🗑 #{I18n.translate("messages.delete_message")}",
+            callback_data: "delete_message"
+          ),
+        ],
+      ]
+
+      keyboard = TelegramBot::InlineKeyboardMarkup.new(buttons)
+
+      bot.send_message(chat_id, io.to_s, reply_markup: keyboard)
+    end
+
     private def update_keyboard(stop_id : Int32)
       buttons = [] of Array(TelegramBot::InlineKeyboardButton)
 
@@ -57,6 +120,17 @@ module DetransportTelegram
         TelegramBot::InlineKeyboardButton.new(
           text: "🔄 #{I18n.translate("messages.update_routes")}",
           callback_data: "update_#{stop_id}"
+        ),
+      ]
+
+      buttons << [
+        TelegramBot::InlineKeyboardButton.new(
+          text: "🗺#{I18n.translate("messages.show_stop_on_map")}",
+          callback_data: "map_#{stop_id}"
+        ),
+        TelegramBot::InlineKeyboardButton.new(
+          text: "ℹ️ #{I18n.translate("messages.show_stop_info")}",
+          callback_data: "info_#{stop_id}"
         ),
       ]
 
@@ -93,8 +167,6 @@ module DetransportTelegram
       String::Builder.build do |io|
         io << "🚏 `#{stop_name}`" << "\n"
         io << "_#{I18n.translate("messages.last_updated")}: #{formatted_time}_" << "\n"
-        io << "#{I18n.translate("messages.show_stop_on_map")}: /map#{stop_id}" << "\n"
-        io << "#{I18n.translate("messages.show_stop_info")}: /info#{stop_id}" << "\n"
         io << "\n"
         if routes.empty?
           io << "🚫 #{I18n.translate("messages.no_infomation")}" << "\n"
@@ -102,6 +174,12 @@ module DetransportTelegram
           routes.each { |el| io << el << "\n" }
         end
       end
+    end
+
+    private def stops
+      detransport_api = DetransportTelegram::DetransportAPI.new
+
+      detransport_api.stops
     end
   end
 end

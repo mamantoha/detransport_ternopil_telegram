@@ -34,16 +34,6 @@ module DetransportTelegram
         handle_about
       when /^\/ping/
         bot.reply(message, "🏓")
-      when r = /^\/map(\d+)/
-        if m = text.match(r)
-          stop_id = m[1].to_i
-          handle_stop_location(stop_id)
-        end
-      when r = /^\/info(\d+)/
-        if m = text.match(r)
-          stop_id = m[1].to_i
-          handle_stop_info(stop_id)
-        end
       else
         nil
       end
@@ -137,60 +127,6 @@ module DetransportTelegram
       detransport_api = DetransportTelegram::DetransportAPI.new
 
       detransport_api.stops
-    end
-
-    private def handle_stop_location(stop_id : Int32)
-      if stop = stops.get_by_id(stop_id.to_s)
-        coord = Geo::Coord.new(stop.lat.to_f, stop.lng.to_f)
-
-        buttons = [
-          [
-            TelegramBot::InlineKeyboardButton.new(
-              text: "🗑 #{I18n.translate("messages.delete_message")}",
-              callback_data: "delete_message"
-            ),
-          ],
-        ]
-        keyboard = TelegramBot::InlineKeyboardMarkup.new(buttons)
-
-        bot.send_venue(
-          chat_id,
-          latitude: stop.lat.to_f,
-          longitude: stop.lng.to_f,
-          title: stop.full_name,
-          address: "\n🧭 #{coord}",
-          reply_markup: keyboard
-        )
-      end
-    end
-
-    private def handle_stop_info(stop_id : Int32)
-      io = String::Builder.new
-
-      if stop = stops.get_by_id(stop_id.to_s)
-        io << stop.full_name
-        io << "\n\n"
-        io << I18n.translate("messages.vehicles_list")
-        io << ":"
-        io << "\n\n"
-        stop.vehicles.each do |vehicle|
-          io << "#{vehicle.icon} #{vehicle.name}"
-          io << "\n"
-        end
-      else
-        io << "🚫 #{I18n.translate("messages.no_infomation")}"
-      end
-      buttons = [
-        [
-          TelegramBot::InlineKeyboardButton.new(
-            text: "🗑 #{I18n.translate("messages.delete_message")}",
-            callback_data: "delete_message"
-          ),
-        ],
-      ]
-      keyboard = TelegramBot::InlineKeyboardMarkup.new(buttons)
-
-      bot.send_message(chat_id, io.to_s, reply_markup: keyboard)
     end
 
     private def swap_keyboard_layout_from_latin_to_ua(text : String)
