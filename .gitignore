@@ -6,3 +6,4 @@
 *.dwarf
 .env
 /config/database.yml
+/utils
