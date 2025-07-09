@@ -19,6 +19,8 @@ module DetransportTelegram
         if callback_data.starts_with?("update_")
           stop_id = callback_data.sub("update_", "").to_i
           handle_update_routes(chat_id, stop_id)
+        elsif callback_data == "delete_message"
+          handle_delete_message(chat_id)
         else
           stop_id = callback_data.to_i
           handle_stop_selection(chat_id, stop_id)
@@ -49,15 +51,29 @@ module DetransportTelegram
     end
 
     private def update_keyboard(stop_id : Int32)
-      buttons = [
-        [
-          TelegramBot::InlineKeyboardButton.new(
-            text: "🔄 #{I18n.translate("messages.update_routes")}",
-            callback_data: "update_#{stop_id}"
-          ),
-        ],
+      buttons = [] of Array(TelegramBot::InlineKeyboardButton)
+
+      buttons << [
+        TelegramBot::InlineKeyboardButton.new(
+          text: "🔄 #{I18n.translate("messages.update_routes")}",
+          callback_data: "update_#{stop_id}"
+        ),
       ]
+
+      buttons << [
+        TelegramBot::InlineKeyboardButton.new(
+          text: "🗑 #{I18n.translate("messages.delete_message")}",
+          callback_data: "delete_message"
+        ),
+      ]
+
       TelegramBot::InlineKeyboardMarkup.new(buttons)
+    end
+
+    private def handle_delete_message(chat_id : Int64)
+      if message = @callback_query.message
+        bot.delete_message(chat_id, message.message_id)
+      end
     end
 
     private def routes_text(stop_id)

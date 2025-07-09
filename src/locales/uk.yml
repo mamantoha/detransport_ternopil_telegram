@@ -17,6 +17,7 @@ uk:
     vehicles_list: Доступний транспорт
     update_routes: Оновити розклад
     last_updated: Останнє оновлення
+    delete_message: Видалити повідомлення
     meters:
       one: "%{count} метр"
       few: "%{count} метри"

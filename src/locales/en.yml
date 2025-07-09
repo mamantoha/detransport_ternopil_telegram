@@ -17,6 +17,7 @@ en:
     vehicles_list: Vehicles
     update_routes: Update schedule
     last_updated: Last updated
+    delete_message: Delete message
     meters:
       one: "%{count} meter"
       other: "%{count} meters"
