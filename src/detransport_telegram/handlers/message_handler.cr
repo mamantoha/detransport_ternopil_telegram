@@ -16,6 +16,8 @@ module DetransportTelegram
       else
         nil
       end
+
+      bot.delete_message(chat_id, message.message_id)
     end
 
     private def handle_text(message, text : String)
