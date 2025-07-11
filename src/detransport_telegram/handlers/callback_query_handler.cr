@@ -97,7 +97,7 @@ module DetransportTelegram
           io << "\n"
         end
       else
-        io << "🚫 #{I18n.translate("messages.no_infomation")}"
+        io << "🚫 #{I18n.translate("messages.no_information")}"
       end
 
       buttons = [
@@ -170,7 +170,7 @@ module DetransportTelegram
         io << "_#{I18n.translate("messages.last_updated")}: #{formatted_time}_" << "\n"
         io << "\n"
         if routes.empty?
-          io << "🚫 #{I18n.translate("messages.no_infomation")}" << "\n"
+          io << "🚫 #{I18n.translate("messages.no_information")}" << "\n"
         else
           routes.each { |el| io << el << "\n" }
         end
