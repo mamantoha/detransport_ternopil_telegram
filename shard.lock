@@ -4,10 +4,6 @@ shards:
     git: https://github.com/jwaldrip/admiral.cr.git
     version: 1.12.1
 
-  clear:
-    git: https://github.com/crystal-garage/clear.git
-    version: 0.8.23+git.commit.a11745f36fd6d1f1cc71997539bbb484c4c4d447
-
   convex_hull:
     git: https://github.com/geocrystal/convex_hull.git
     version: 0.6.0
@@ -30,7 +26,7 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.7.6
+    version: 0.7.7
 
   geo_bearing:
     git: https://github.com/geocrystal/geo_bearing.git
@@ -38,7 +34,7 @@ shards:
 
   geohash:
     git: https://github.com/geocrystal/geohash.git
-    version: 0.1.1
+    version: 0.1.2
 
   geojson:
     git: https://github.com/geocrystal/geojson.git
@@ -75,6 +71,10 @@ shards:
   jaro_winkler:
     git: https://github.com/kostya/jaro_winkler.git
     version: 0.2
+
+  lustra:
+    git: https://github.com/crystal-garage/lustra.git
+    version: 0.9.0+git.commit.9ddb313c99d3fadf40ef83732b5adbceee597d7a
 
   pg:
     git: https://github.com/will/crystal-pg.git

@@ -20,8 +20,8 @@ dependencies:
     github: crystal-i18n/i18n
   humanize_time:
     github: mamantoha/humanize_time
-  clear:
-    github: crystal-garage/clear
+  lustra:
+    github: crystal-garage/lustra
     branch: develop
 
 development_dependencies:

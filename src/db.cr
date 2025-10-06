@@ -1,6 +1,6 @@
-require "clear/cli"
+require "lustra/cli"
 
 require "../config/config"
 require "./db/migrations/*"
 
-Clear::CLI.run
+Lustra::CLI.run
