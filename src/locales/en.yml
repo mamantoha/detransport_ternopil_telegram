@@ -21,3 +21,9 @@ en:
     meters:
       one: "%{count} meter"
       other: "%{count} meters"
+  admin:
+    access_denied: Access denied
+    users_list_title: Users List
+    users_total: total
+    updated: Updated
+    lang: Lang

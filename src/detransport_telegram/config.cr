@@ -10,6 +10,10 @@ module DetransportTelegram
       ENV["BOT_NAME"]
     end
 
+    def admin_telegram_id : Int64
+      ENV["ADMIN_TELEGRAM_ID"].to_i64
+    end
+
     def date
       {{ `date -R`.stringify.chomp }}
     end

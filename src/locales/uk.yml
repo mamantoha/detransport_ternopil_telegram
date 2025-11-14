@@ -23,3 +23,9 @@ uk:
       few: "%{count} метри"
       many: "%{count} метрів"
       other: "%{count} метрів"
+  admin:
+    access_denied: Доступ заборонено
+    users_list_title: Список користувачів
+    users_total: всього
+    updated: Оновлено
+    lang: Мова
