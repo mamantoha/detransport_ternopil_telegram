@@ -74,7 +74,7 @@ shards:
 
   lustra:
     git: https://github.com/crystal-garage/lustra.git
-    version: 0.12.0+git.commit.7fda8ee645e7dca303b458fd4cd6f1b80fc7b3fb
+    version: 0.13.0+git.commit.0ab67abdae9a9fa81df9f00b53b51bf4d7163777
 
   pg:
     git: https://github.com/will/crystal-pg.git
