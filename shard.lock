@@ -26,7 +26,7 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.7.7
+    version: 0.8.0
 
   geo_bearing:
     git: https://github.com/geocrystal/geo_bearing.git
@@ -54,7 +54,7 @@ shards:
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.13.0
+    version: 0.13.1
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
@@ -74,11 +74,15 @@ shards:
 
   lustra:
     git: https://github.com/crystal-garage/lustra.git
-    version: 0.9.0+git.commit.9ddb313c99d3fadf40ef83732b5adbceee597d7a
+    version: 0.12.0+git.commit.7fda8ee645e7dca303b458fd4cd6f1b80fc7b3fb
 
   pg:
     git: https://github.com/will/crystal-pg.git
     version: 0.29.0
+
+  polygon_contains:
+    git: https://github.com/geocrystal/polygon_contains.git
+    version: 0.2.0
 
   ring_area:
     git: https://github.com/geocrystal/ring_area.git
