@@ -10,7 +10,7 @@ shards:
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.5.1
+    version: 1.6.2
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -54,7 +54,7 @@ shards:
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.13.1
+    version: 0.14.0
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
@@ -74,7 +74,7 @@ shards:
 
   lustra:
     git: https://github.com/crystal-garage/lustra.git
-    version: 0.13.0+git.commit.0ab67abdae9a9fa81df9f00b53b51bf4d7163777
+    version: 0.16.0+git.commit.66ab355217a3ba6bccb2cededa99e2762b968b4f
 
   pg:
     git: https://github.com/will/crystal-pg.git
