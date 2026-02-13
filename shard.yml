@@ -1,7 +1,7 @@
 name: detransport_ternopil_telegram
 version: 0.1.0
 
-crystal: 1.16.3
+crystal: 1.19.1
 
 dependencies:
   dotenv:
