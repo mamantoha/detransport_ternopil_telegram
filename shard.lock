@@ -8,9 +8,13 @@ shards:
     git: https://github.com/geocrystal/convex_hull.git
     version: 0.6.0
 
+  cookie_jar:
+    git: https://github.com/mamantoha/http-cookie_jar.git
+    version: 0.1.0
+
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.6.2
+    version: 1.7.0
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
@@ -74,7 +78,7 @@ shards:
 
   lustra:
     git: https://github.com/crystal-garage/lustra.git
-    version: 0.16.0+git.commit.66ab355217a3ba6bccb2cededa99e2762b968b4f
+    version: 0.17.2+git.commit.ea19cfcd9be40131fc942a14fa40a07f0e142540
 
   pg:
     git: https://github.com/will/crystal-pg.git
