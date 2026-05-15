@@ -14,6 +14,7 @@ dependencies:
     github: mamantoha/crest
   telegram_bot:
     github: crystal-garage/telegram_bot
+    branch: develop
   jaro_winkler:
     github: kostya/jaro_winkler
   i18n:
