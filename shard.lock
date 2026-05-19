@@ -94,5 +94,5 @@ shards:
 
   telegram_bot:
     git: https://github.com/crystal-garage/telegram_bot.git
-    version: 1.0.0-rc1+git.commit.50ddf4dbb164d9cf6775d007a7270bbfa13d826d
+    version: 1.0.0-rc2+git.commit.bfe71c83d9ab0c6142d681c7e4c21d1fa9ed78fa
 
