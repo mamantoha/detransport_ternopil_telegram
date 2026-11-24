@@ -10,15 +10,15 @@ shards:
 
   cookie_jar:
     git: https://github.com/mamantoha/http-cookie_jar.git
-    version: 0.1.0
+    version: 0.2.0
 
   crest:
     git: https://github.com/mamantoha/crest.git
-    version: 1.7.0
+    version: 1.9.0
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.13.1
+    version: 0.15.0
 
   dotenv:
     git: https://github.com/gdotdesign/cr-dotenv.git
@@ -30,7 +30,7 @@ shards:
 
   geo:
     git: https://github.com/geocrystal/geo.git
-    version: 0.8.0
+    version: 0.9.0
 
   geo_bearing:
     git: https://github.com/geocrystal/geo_bearing.git
@@ -58,11 +58,11 @@ shards:
 
   http_proxy:
     git: https://github.com/mamantoha/http_proxy.git
-    version: 0.14.0
+    version: 0.17.0
 
   humanize_time:
     git: https://github.com/mamantoha/humanize_time.git
-    version: 0.12.5
+    version: 0.12.6
 
   i18n:
     git: https://github.com/crystal-i18n/i18n.git
@@ -78,11 +78,11 @@ shards:
 
   lustra:
     git: https://github.com/crystal-garage/lustra.git
-    version: 0.17.2+git.commit.ea19cfcd9be40131fc942a14fa40a07f0e142540
+    version: 0.18.3+git.commit.55d4811e570ff3d1059fed63deb54c6b9a46cc0d
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.29.0
+    version: 0.32.0+git.commit.c306b5876760f373c73d472769bc3cf296ed91ef
 
   polygon_contains:
     git: https://github.com/geocrystal/polygon_contains.git
@@ -92,7 +92,11 @@ shards:
     git: https://github.com/geocrystal/ring_area.git
     version: 0.2.1
 
+  sun_times:
+    git: https://github.com/geocrystal/sun_times.git
+    version: 0.2.0
+
   telegram_bot:
     git: https://github.com/crystal-garage/telegram_bot.git
-    version: 1.0.0-rc2+git.commit.bfe71c83d9ab0c6142d681c7e4c21d1fa9ed78fa
+    version: 1.0.0-rc2+git.commit.7905b4a97b146fa2dfa2fc4face0ecca3c216b35
 
